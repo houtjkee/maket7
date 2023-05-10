@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+}
+
+footer {
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner-container {
+  background-color: #de5d5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-container .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.banner-container .carousel-indicators .active {
+  background-color: #fff;
+}
+.banner-container .carousel-item .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.banner-container .buttons {
+  display: flex;
+}
+.banner-container .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 257px;
+  height: 77px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.banner-container .btn-primary {
+  color: #fff;
+}
+.banner-container .btn-primary:hover {
+  color: #fff;
+}
+.banner-container .btn-secondary {
+  border-color: #ccc;
+  color: #ccc;
+}
+.banner-container .btn-secondary:hover {
+  border-color: #fff;
+  color: #fff;
+}
