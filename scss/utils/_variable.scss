@@ -1,1 +1,33 @@
+// Colors
 $bg-color: #de5d5d;
+$white: #fff;
+$black: #000;
+
+// Font size.
+$fs-extra-small: 0.75em; // 12px
+$fs-small: 0.875em; // 14px
+$fs-icon-deck: 0.937em; //15px
+$fs-base: 16px;
+$fs-medium-small: 1.125em; // 18px
+$fs-large-small: 1.187em; // 19px
+$fs-small-medium: 1.25em; // 20px
+$fs-lg-md: 1.37em; // 22px
+$fs-medium: 1.562em; // 25px
+$fs-extra-medium: 1.75em; // 28px
+$fs-large: 1.875em; // 30px
+$fs-extra-small-large: 3.75em; // 60px
+$fs-small-large: 4.375em; // 70px
+$fs-medium-large: 5em; // 80px
+$fs-extra-large: 5.625em; // 90px
+
+// Font family
+$font-family-base: 'Varela Round', sans-serif;
+$font-family-title: 'Montserrat', sans-serif;
+
+// Breakpoints
+$extra-wide: 1300px;
+$wide-width: 1200px;
+$desktop-width: 992px;
+$tablet-width: 768px;
+$small-mobile-width: 480px;
+$extra-small-mobile-width: 320px
