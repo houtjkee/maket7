@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Varela Round";
+  src: url("/fonts/VarelaRound-Regular.ttf") format("truetype"), url("/fonts/VarelaRound-Regular.woff") format("woff");
+  font-weight: 300;
+}
 * {
   padding: 0;
   margin: 0;
@@ -146,9 +152,9 @@ footer {
   font-size: 5.625em;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  letter-spacing: 0.034em;
+  letter-spacing: -0.015em;
   color: #fff;
-  margin-bottom: 8.2%;
+  margin-bottom: 8.4%;
 }
 .banner .banner__slider .slider-item .slider-item-caption .slider-item-caption-btn {
   display: flex;
@@ -163,7 +169,6 @@ footer {
   font-family: "Varela Round", sans-serif;
   font-size: 1.875em;
   font-weight: 400;
-  letter-spacing: 1.1px;
   width: 257px;
   height: 77px;
   border-radius: 5px;
@@ -176,10 +181,10 @@ footer {
   max-width: 100%;
 }
 .banner .banner__slider .slider-item .slider-item-caption .slider-item-caption-btn .btn .slider-item-caption-btn-img-app {
-  margin-right: 17px;
+  margin-right: 16px;
 }
 .banner .banner__slider .slider-item .slider-item-caption .slider-item-caption-btn .btn .slider-item-caption-btn-img-play {
-  margin: 3px 19px 0 12px;
+  margin: 4px 18px 0 6px;
 }
 
 @media (max-width: 1300px) {
@@ -316,13 +321,11 @@ footer {
     width: 20px;
     height: 20px;
     margin-right: 0;
-    margin-left: 9px;
   }
   .banner .banner__slider .slider-item .slider-item-caption .slider-item-caption-btn .btn .slider-item-caption-btn-img-play {
     width: 15px;
     height: 17px;
     margin-right: 0;
-    margin-left: 12px;
   }
 }
 @media (max-width: 320px) {
@@ -339,4 +342,78 @@ footer {
     font-size: 1.562em;
     margin-bottom: 0;
   }
+}
+.ama__container {
+  background-color: #fff;
+  margin-top: 100px;
+  max-width: 1170px;
+}
+.ama__container .ama-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  margin-bottom: 60px;
+  padding-right: 10px;
+}
+.ama__container .row {
+  display: flex;
+  justify-content: space-between;
+}
+.ama__container .row .ama__card-1 {
+  font-color: #666666;
+  margin: 0 0 0 31px;
+}
+.ama__container .row .ama__card-1 img {
+  margin-bottom: 39px;
+}
+.ama__container .row .ama__card-1 h2 {
+  font-size: 1.125em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 6px;
+  padding: 0 15px 0 0;
+}
+.ama__container .row .ama__card-1 p {
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  padding-right: 12px;
+  margin-bottom: 8px;
+}
+.ama__container .row .ama__card-2 {
+  font-color: #666666;
+  margin: 1px 0 0 2px;
+}
+.ama__container .row .ama__card-2 img {
+  margin-bottom: 36px;
+}
+.ama__container .row .ama__card-2 h2 {
+  font-size: 1.125em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.ama__container .row .ama__card-2 p {
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.ama__container .row .ama__card-3 {
+  font-color: #666666;
+  margin: 0 47px 0 0;
+}
+.ama__container .row .ama__card-3 img {
+  margin-bottom: 37px;
+}
+.ama__container .row .ama__card-3 h2 {
+  font-size: 1.125em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.ama__container .row .ama__card-3 p {
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
 }

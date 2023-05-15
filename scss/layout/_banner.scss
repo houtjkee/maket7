@@ -70,9 +70,9 @@
           font-size: $fs-extra-large;
           font-family: $font-family-title;
           font-weight: 600;
-          letter-spacing: 0.034em;
+          letter-spacing: -0.015em;
           color: $white;
-          margin-bottom: 8.2%;
+          margin-bottom: 8.4%;
         }
 
         .slider-item-caption-btn {
@@ -88,7 +88,6 @@
             font-family: $font-family-base;
             font-size: $fs-large;
             font-weight: 400;
-            letter-spacing: 1.1px;
             width: 257px;
             height: 77px;
             border-radius: 5px;
@@ -102,11 +101,11 @@
               max-width: 100%;
 
               &-app {
-                margin-right: 17px;
+                margin-right: 16px;
               }
 
               &-play {
-                margin: 3px 19px 0 12px;
+                margin: 4px 18px 0 6px;
               }
             }
           }
@@ -308,14 +307,12 @@
                 width: 20px;
                 height: 20px;
                 margin-right: 0;
-                margin-left: 9px;
               }
 
               & .slider-item-caption-btn-img-play {
                 width: 15px;
                 height: 17px;
                 margin-right: 0;
-                margin-left: 12px;
               }
             }
           }
