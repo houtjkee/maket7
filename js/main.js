@@ -9,3 +9,10 @@ $(document).ready(function () {
     autoplaySpeed: 10000
   });
 });
+
+if (document.querySelectorAll('.ama-item').length > 3) {
+  const elements = document.querySelectorAll('.ama-item');
+  elements.forEach((element) => {
+    element.style.margin = '0';
+  });
+}

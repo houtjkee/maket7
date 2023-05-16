@@ -343,77 +343,202 @@ footer {
     margin-bottom: 0;
   }
 }
-.ama__container {
+.why__ama {
+  width: 100%;
   background-color: #fff;
-  margin-top: 100px;
+}
+.why__ama .ama__container {
+  padding: 100px 0;
   max-width: 1170px;
 }
-.ama__container .ama-h1 {
+.why__ama .ama__container .ama__title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 3em;
-  margin-bottom: 60px;
   padding-right: 10px;
 }
-.ama__container .row {
+.why__ama .ama__container .ama__block {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
 }
-.ama__container .row .ama__card-1 {
-  font-color: #666666;
-  margin: 0 0 0 31px;
+.why__ama .ama__container .ama__block .ama__card-1 {
+  margin: 0 0 0 42px;
+  color: #666666;
+  padding-bottom: 15px;
 }
-.ama__container .row .ama__card-1 img {
+.why__ama .ama__container .ama__block .ama__card-1 img {
   margin-bottom: 39px;
 }
-.ama__container .row .ama__card-1 h2 {
+.why__ama .ama__container .ama__block .ama__card-1 h3 {
   font-size: 1.125em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-bottom: 6px;
   padding: 0 15px 0 0;
 }
-.ama__container .row .ama__card-1 p {
+.why__ama .ama__container .ama__block .ama__card-1 p {
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   padding-right: 12px;
   margin-bottom: 8px;
 }
-.ama__container .row .ama__card-2 {
-  font-color: #666666;
-  margin: 1px 0 0 2px;
+.why__ama .ama__container .ama__block .ama__card-2 {
+  margin: 1px 0 0 3px;
+  color: #666666;
+  padding-bottom: 15px;
 }
-.ama__container .row .ama__card-2 img {
+.why__ama .ama__container .ama__block .ama__card-2 img {
   margin-bottom: 36px;
 }
-.ama__container .row .ama__card-2 h2 {
+.why__ama .ama__container .ama__block .ama__card-2 h3 {
   font-size: 1.125em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-.ama__container .row .ama__card-2 p {
+.why__ama .ama__container .ama__block .ama__card-2 p {
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   margin-bottom: 7px;
 }
-.ama__container .row .ama__card-3 {
-  font-color: #666666;
-  margin: 0 47px 0 0;
+.why__ama .ama__container .ama__block .ama__card-3 {
+  margin: 1px 59px 0 0;
+  color: #666666;
+  padding-bottom: 15px;
 }
-.ama__container .row .ama__card-3 img {
+.why__ama .ama__container .ama__block .ama__card-3 img {
   margin-bottom: 37px;
 }
-.ama__container .row .ama__card-3 h2 {
+.why__ama .ama__container .ama__block .ama__card-3 h3 {
   font-size: 1.125em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-bottom: 8px;
 }
-.ama__container .row .ama__card-3 p {
+.why__ama .ama__container .ama__block .ama__card-3 p {
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   margin-bottom: 8px;
+}
+
+@media (max-width: 1300px) {
+  .why__ama {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .why__ama {
+    width: 100%;
+  }
+  .why__ama .ama__container .ama__block {
+    margin: 45px 30px 0 30px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 {
+    margin: 0;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 {
+    margin: 0;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 {
+    margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .why__ama {
+    width: 100%;
+  }
+  .why__ama .ama__container .ama__block {
+    margin: 45px 30px 0 30px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 img {
+    margin-bottom: 20px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 p {
+    margin-bottom: 4px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 img {
+    margin-bottom: 20px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 p {
+    margin-bottom: 4px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 img {
+    margin-bottom: 20px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 p {
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .why__ama {
+    width: 100%;
+  }
+  .why__ama .ama__container .ama__block {
+    margin: 40px 0 0 0;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 img {
+    margin-bottom: 20px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 p {
+    margin-bottom: 4px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 img {
+    margin-bottom: 20px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 p {
+    margin-bottom: 4px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 img {
+    margin-bottom: 20px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 p {
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .why__ama {
+    width: 100%;
+  }
+  .why__ama .ama__container .ama__title {
+    font-size: 2.8125em;
+    padding-right: 0;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 h3 {
+    font-size: 16px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 img {
+    width: 189px;
+    height: 189px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-1 p {
+    font-size: 0.875em;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 h3 {
+    font-size: 16px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 img {
+    width: 189px;
+    height: 189px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-2 p {
+    font-size: 0.875em;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 h3 {
+    font-size: 16px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 img {
+    width: 189px;
+    height: 189px;
+  }
+  .why__ama .ama__container .ama__block .ama__card-3 p {
+    font-size: 0.875em;
+  }
+}
+@media (max-width: 320px) {
+  .why__ama {
+    width: 100%;
+  }
 }
