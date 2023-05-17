@@ -31,3 +31,14 @@ $(document).ready(function () {
     autoplaySpeed: 10000
   });
 });
+
+$(document).ready(function () {
+  $('.features__info-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 7000,
+  });
+});

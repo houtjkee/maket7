@@ -5,6 +5,9 @@ $black: #000;
 $grey: #666666;
 $share-bg: #262626;
 $share-text: #aeaeae;
+$features-bg: #313131;
+$red: #cc5858;
+$pink: #f06464;
 
 // Font size.
 $fs-extra-small: 0.75em; // 12px
@@ -18,6 +21,7 @@ $fs-lg-md: 1.37em; // 22px
 $fs-medium: 1.562em; // 25px
 $fs-extra-medium: 1.75em; // 28px
 $fs-large: 1.875em; // 30px
+$fs-title-medium-large: 2.125em; // 34px
 $fs-extra-small-large: 2.8125em; // 45px
 $fs-ama-title: 3em; //48px
 $fs-small-large: 4.375em; // 70px
@@ -34,5 +38,6 @@ $extra-wide: 1300px;
 $wide-width: 1200px;
 $desktop-width: 992px;
 $tablet-width: 768px;
+$share-tablet-width: 767px;
 $small-mobile-width: 480px;
 $extra-small-mobile-width: 320px

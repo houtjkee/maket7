@@ -632,57 +632,75 @@ footer {
   .share {
     width: 100%;
   }
+  .share .share__container .share__block .share__info {
+    padding: 15.2% 4% 0 7.5%;
+  }
+  .share .share__container .share__block .share__info-title {
+    font-size: 2.8125em;
+  }
+  .share .share__container .share__block .share__info-text {
+    margin-bottom: 7.3%;
+  }
+  .share .share__container .share__block .share__info-slider-item-text {
+    line-height: 16px;
+    padding: 3px 0 0 5px;
+    font-size: 0.875em;
+  }
+  .share .share__container .share__block .share__info-slider-item-img img {
+    width: 130px;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 992px) {
   .share {
     width: 100%;
   }
-  .share .share__container .ama__block {
-    margin: 45px 30px 0 30px;
+  .share .share__container .share__block .share__image {
+    padding-right: 0;
   }
-  .share .share__container .ama__block .ama__card-1 img {
-    margin-bottom: 20px;
+  .share .share__container .share__block .share__info {
+    padding: 15.2% 7% 0 5.5%;
   }
-  .share .share__container .ama__block .ama__card-1 p {
-    margin-bottom: 4px;
+  .share .share__container .share__block .share__info-text {
+    line-height: 20px;
   }
-  .share .share__container .ama__block .ama__card-2 img {
-    margin-bottom: 20px;
-  }
-  .share .share__container .ama__block .ama__card-2 p {
-    margin-bottom: 4px;
-  }
-  .share .share__container .ama__block .ama__card-3 img {
-    margin-bottom: 20px;
-  }
-  .share .share__container .ama__block .ama__card-3 p {
-    margin-bottom: 4px;
+  .share .share__container .share__block .share__info-slider-item-text {
+    padding: 0 0 0 10px;
+    margin-bottom: 2px;
   }
 }
-@media (max-width: 768px) {
-  .why__ama {
+@media (max-width: 767px) {
+  .share {
     width: 100%;
   }
-  .why__ama .ama__container .ama__block {
-    margin: 40px 0 0 0;
+  .share .share__container {
+    max-width: 320px;
   }
-  .why__ama .ama__container .ama__block .ama__card-1 img {
-    margin-bottom: 20px;
+  .share .share__container .share__block .share__image {
+    padding-right: 15px;
+    order: 2;
+    padding-top: 25px;
   }
-  .why__ama .ama__container .ama__block .ama__card-1 p {
-    margin-bottom: 4px;
+  .share .share__container .share__block .share__info {
+    order: 1;
   }
-  .why__ama .ama__container .ama__block .ama__card-2 img {
-    margin-bottom: 20px;
+  .share .share__container .share__block .share__info-title {
+    font-size: 2.125em;
   }
-  .why__ama .ama__container .ama__block .ama__card-2 p {
-    margin-bottom: 4px;
+  .share .share__container .share__block .share__info-text {
+    line-height: 18px;
+    font-size: 16px;
   }
-  .why__ama .ama__container .ama__block .ama__card-3 img {
-    margin-bottom: 20px;
+  .share .share__container .share__block .share__info-slider-item-img img {
+    width: 98px;
+    padding-bottom: 20px;
   }
-  .why__ama .ama__container .ama__block .ama__card-3 p {
-    margin-bottom: 4px;
+  .share .share__container .share__block .share__info-slider .slick-dots {
+    padding: 15px 0 0 0;
+  }
+  .share .share__container .share__block .share__info-slider .slick-dots button {
+    width: 10px;
+    height: 10px;
   }
 }
 @media (max-width: 480px) {
@@ -727,5 +745,128 @@ footer {
 @media (max-width: 320px) {
   .why__ama {
     width: 100%;
+  }
+}
+.features {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #313131;
+}
+.features .features__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  color: #fff;
+}
+.features .features__container .features__block .features__image img {
+  padding-left: 16px;
+}
+.features .features__container .features__block .features__text {
+  padding: 0;
+}
+.features .features__container .features__block .features__text .features__info {
+  margin-left: 15%;
+  padding: 19.5% 18% 0 20px;
+}
+.features .features__container .features__block .features__text .features__info-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 22px;
+  letter-spacing: 1.4px;
+  margin-left: -4px;
+}
+.features .features__container .features__block .features__text .features__info-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.125em;
+  line-height: 27px;
+  margin-bottom: 13.9%;
+}
+.features .features__container .features__block .features__text .features__info-slider {
+  background-color: #fff;
+  width: 470px;
+  border-radius: 5px;
+}
+.features .features__container .features__block .features__text .features__info-slider .slick-dots {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f06464;
+  padding-bottom: 17px;
+  padding-left: 30px;
+}
+.features .features__container .features__block .features__text .features__info-slider .slick-dots li {
+  list-style: none;
+  margin: 8px 4px 0 4px;
+}
+.features .features__container .features__block .features__text .features__info-slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.features .features__container .features__block .features__text .features__info-slider .slick-active button {
+  background-color: #fff;
+}
+.features .features__container .features__block .features__text .features__info-slider .slick-list {
+  overflow: hidden;
+}
+.features .features__container .features__block .features__text .features__info-slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 16px 30px 3px 30px;
+}
+.features .features__container .features__block .features__text .features__info-slider-item-text {
+  padding: 16px 10px 10px 30px;
+}
+.features .features__container .features__block .features__text .features__info-slider-item img {
+  width: 89px;
+  height: 89px;
+  margin-top: -28px;
+}
+.features .features__container .features__block .features__text .features__info-slider-item h3 {
+  color: #cc5858;
+  font-size: 1.125em;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+}
+.features .features__container .features__block .features__text .features__info-slider-item-text-p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+@media (max-width: 1300px) {
+  .features {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .features {
+    max-width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .features {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .features {
+    max-width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .features {
+    max-width: 100%;
   }
 }
