@@ -918,3 +918,87 @@ footer {
     max-width: 100%;
   }
 }
+.gallery {
+  padding-top: 70px;
+}
+.gallery .gallery__container {
+  padding: 0;
+}
+.gallery .gallery__container .gallery__block {
+  margin: 0;
+}
+.gallery .gallery__container .gallery__block .gallery__text {
+  margin-bottom: 76px;
+  margin-left: 24.5%;
+}
+.gallery .gallery__container .gallery__block .gallery__text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  color: #f06464;
+  margin-bottom: 19px;
+  letter-spacing: -0.6px;
+}
+.gallery .gallery__container .gallery__block .gallery__text p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.125em;
+  line-height: 27px;
+}
+.gallery .gallery__container .gallery__block .gallery__images {
+  width: 100%;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item {
+  width: 25%;
+  position: relative;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item img:hover {
+  transform: translateY(-38px);
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 87px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay:hover {
+  opacity: 1;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .text {
+  font-family: "Varela Round", sans-serif;
+  color: #c2c2c2;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .like-button {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
