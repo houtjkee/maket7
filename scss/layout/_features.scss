@@ -3,6 +3,7 @@
   width: 100%;
   padding-top: 50px;
   background-color: $features-bg;
+
   & .features__container {
     max-width: 1200px;
     padding: 0 15px;
@@ -28,9 +29,9 @@
             font-size: $fs-ama-title;
             font-weight: 500;
             margin-bottom: 22px;
-            letter-spacing: 1.4px;
             margin-left: -4px;
           }
+
           &-text {
             font-family: $font-family-base;
             font-size: $fs-medium-small;
@@ -83,23 +84,26 @@
 
               &-text {
                 padding: 16px 10px 10px 30px;
+
+                & h3 {
+                  color: $red;
+                  font-size: $fs-medium-small;
+                  font-family: $font-family-title;
+                  line-height: 24px;
+                }
+
+                &-p {
+                  font-family: $font-family-base;
+                  font-size: $fs-base;
+                  line-height: 24px;
+                  color: $grey;
+                }
               }
+
               & img {
                 width: 89px;
                 height: 89px;
                 margin-top: -28px;
-              }
-              & h3 {
-                color: $red;
-                font-size: $fs-medium-small;
-                font-family: $font-family-title;
-                line-height: 24px;
-              }
-              &-text-p {
-                font-family: $font-family-base;
-                font-size: $fs-base;
-                line-height: 24px;
-                color: $grey;
               }
             }
           }
@@ -126,12 +130,51 @@
 @media (max-width: $desktop-width) {
   .features {
     max-width: 100%;
+    padding-top: 35px;
 
     & .features__container {
+      max-width: 768px;
 
       & .features__block {
+        & .features__text {
 
+          & .features__info {
+            padding: 9.5% 18% 0 20px;
 
+            &-title {
+              font-size: $fs-features-title;
+              margin-bottom: 12px;
+            }
+
+            &-text {
+              font-size: $fs-small;
+              line-height: 20px;
+              margin-bottom: 6.9%;
+            }
+
+            &-slider {
+              width: 295px;
+
+              &-item {
+                padding: 5px 10px 3px 13px;
+
+                &-text {
+                  padding: 10px 5px 5px 14px;
+
+                  & h3 {
+                    font-size: $fs-base;
+                    line-height: 18px;
+                  }
+
+                  &-p {
+                    font-size: $fs-small;
+                    line-height: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -142,10 +185,27 @@
     max-width: 100%;
 
     & .features__container {
+      max-width: 320px;
 
       & .features__block {
+        & .features__image {
+          & img {
+            padding-left: 0;
+          }
+        }
 
+        & .features__text {
+          padding: 0;
 
+          & .features__info {
+            margin-left: 0;
+            padding: 0 15px;
+
+            &-slider {
+                width: 290px;
+            }
+          }
+        }
       }
     }
   }
@@ -155,27 +215,11 @@
 @media (max-width: $small-mobile-width) {
   .features {
     max-width: 100%;
-
-    & .features__container {
-
-      & .features__block {
-
-
-      }
-    }
   }
 }
 
 @media (max-width: $extra-small-mobile-width) {
   .features {
     max-width: 100%;
-
-    & .features__container {
-
-      & .features__block {
-
-
-      }
-    }
   }
 }
