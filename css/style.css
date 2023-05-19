@@ -928,7 +928,7 @@ footer {
   margin: 0;
 }
 .gallery .gallery__container .gallery__block .gallery__text {
-  margin-bottom: 76px;
+  margin-bottom: 62px;
   margin-left: 24.5%;
 }
 .gallery .gallery__container .gallery__block .gallery__text h2 {
@@ -946,22 +946,30 @@ footer {
 }
 .gallery .gallery__container .gallery__block .gallery__images {
   width: 100%;
+  padding: 0;
 }
 .gallery .gallery__container .gallery__block .gallery__images__block {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin: 0;
 }
 .gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item {
   width: 25%;
   position: relative;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item.hovered .gallery__images-item-img {
+  transform: translateY(-38px);
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item.hovered .overlay {
+  height: 87px;
+  display: flex;
 }
 .gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item::before {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
-.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item img {
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .gallery__images-item-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -971,7 +979,7 @@ footer {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item img:hover {
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .gallery__images-item-img:hover {
   transform: translateY(-38px);
 }
 .gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay {
@@ -979,26 +987,52 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 87px;
+  height: 0;
   background-color: #151515;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
   padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay:hover {
-  opacity: 1;
+  display: none;
+  transition: height 0.3s ease;
 }
 .gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .text {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .text .text-main {
   font-family: "Varela Round", sans-serif;
   color: #c2c2c2;
   font-size: 1.125em;
-  margin-bottom: 10px;
+  margin: 0;
 }
-.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .like-button {
-  color: #fff;
-  font-size: 16px;
-  margin-top: 10px;
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .like-section {
+  display: flex;
+  align-items: center;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .like-section .like__button {
+  background-color: #151515;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .like-section .like__button .like-button-img {
+  width: 25px;
+  height: 21px;
+  background-color: #151515;
+  display: block;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .like-section .like__button .like-button-img-painted {
+  width: 25px;
+  height: 21px;
+  background-color: #151515;
+  display: none;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item .overlay .like-section .like-count {
+  color: #f06464;
+  font-size: 1.5em;
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  padding: 0 10px;
+}
+.gallery .gallery__container .gallery__block .gallery__images__block .gallery__images-item:hover .overlay {
+  height: 87px;
+  display: flex;
 }

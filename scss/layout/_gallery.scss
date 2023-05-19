@@ -1,5 +1,4 @@
 // Gallery block style
-
 .gallery {
   padding-top: 70px;
 
@@ -10,7 +9,7 @@
       margin: 0;
 
       & .gallery__text {
-        margin-bottom: 76px;
+        margin-bottom: 62px;
         margin-left: 24.5%;
 
         & h2 {
@@ -31,15 +30,27 @@
 
       & .gallery__images {
         width: 100%;
+        padding: 0;
 
         &__block {
           display: flex;
           flex-wrap: wrap;
-          margin: -15px;
+          margin: 0;
 
           & .gallery__images-item {
             width: calc(25%);
             position: relative;
+
+            &.hovered {
+              .gallery__images-item-img {
+                transform: translateY(-38px);
+              }
+
+              .overlay {
+                height: 87px;
+                display: flex;
+              }
+            }
 
             &::before {
               content: "";
@@ -47,7 +58,7 @@
               padding-bottom: 100%;
             }
 
-            img {
+            & .gallery__images-item-img {
               position: absolute;
               top: 0;
               left: 0;
@@ -66,32 +77,63 @@
               bottom: 0;
               left: 0;
               width: 100%;
-              height: 87px;
+              height: 0;
               background-color: $black-bg;
-              display: flex;
-              flex-direction: row;
-              justify-content: flex-end;
+              flex-direction: column;
               padding: 10px;
-              opacity: 0;
-              transition: opacity 0.3s ease;
-
-              &:hover {
-                opacity: 1;
-              }
+              display: none;
+              transition: height 0.3s ease;
 
               & .text {
-                font-family: $font-family-base;
-                color: $light-grey;
-                font-size: $fs-medium-small;
-                margin-bottom: 10px;
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                align-items: center;
+
+                & .text-main {
+                  font-family: $font-family-base;
+                  color: $light-grey;
+                  font-size: $fs-medium-small;
+                  margin: 0;
+                }
               }
 
-              & .like-button {
-                color: $white;
-                font-size: 16px;
-                margin-top: 10px;
+              & .like-section {
+                display: flex;
+                align-items: center;
+
+                & .like__button {
+                  background-color: $black-bg;
+
+                  & .like-button-img {
+                    width: 25px;
+                    height: 21px;
+                    background-color: $black-bg;
+                    display: block;
+                  }
+
+                  & .like-button-img-painted {
+                    width: 25px;
+                    height: 21px;
+                    background-color: $black-bg;
+                    display: none;
+                  }
+                }
+
+                & .like-count {
+                  color: $pink;
+                  font-size: $fs-lg-extra;
+                  font-family: $font-family-base;
+                  margin: 0;
+                  padding: 0 10px;
+                }
               }
             }
+          }
+
+          & .gallery__images-item:hover .overlay {
+            height: 87px;
+            display: flex;
           }
         }
       }
