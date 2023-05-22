@@ -2,17 +2,18 @@
 .gallery {
   padding-top: 70px;
 
-  & .gallery__container {
+  .gallery__container {
     padding: 0;
 
-    & .gallery__block {
+    .gallery__block {
       margin: 0;
 
-      & .gallery__text {
+      .gallery__text {
         margin-bottom: 62px;
-        margin-left: 24.5%;
+        width: 435px;
+        margin-left: 25.2%;
 
-        & h2 {
+        h1 {
           font-family: $font-family-title;
           font-size: $fs-ama-title;
           font-weight: 500;
@@ -21,50 +22,31 @@
           letter-spacing: -0.6px;
         }
 
-        & p {
+        p {
           font-family: $font-family-base;
           font-size: $fs-medium-small;
           line-height: 27px;
         }
       }
 
-      & .gallery__images {
-        width: 100%;
+      .gallery__images {
         padding: 0;
 
         &__block {
           display: flex;
-          flex-wrap: wrap;
           margin: 0;
 
-          & .gallery__images-item {
-            width: calc(25%);
+          .gallery__images-item {
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            flex-direction: column;
 
-            &.hovered {
-              .gallery__images-item-img {
-                transform: translateY(-38px);
-              }
-
-              .overlay {
-                height: 87px;
-                display: flex;
-              }
-            }
-
-            &::before {
-              content: "";
-              display: block;
-              padding-bottom: 100%;
-            }
-
-            & .gallery__images-item-img {
-              position: absolute;
-              top: 0;
-              left: 0;
+            .gallery__images-item-img {
               width: 100%;
               height: 100%;
-              object-fit: cover;
               transition: transform 0.3s ease;
 
               &:hover {
@@ -84,13 +66,13 @@
               display: none;
               transition: height 0.3s ease;
 
-              & .text {
+              .text {
                 display: flex;
                 flex: 1;
                 justify-content: space-between;
                 align-items: center;
 
-                & .text-main {
+                .text-main {
                   font-family: $font-family-base;
                   color: $light-grey;
                   font-size: $fs-medium-small;
@@ -98,21 +80,21 @@
                 }
               }
 
-              & .like-section {
+              .like-section {
                 display: flex;
                 align-items: center;
 
-                & .like__button {
+                .like__button {
                   background-color: $black-bg;
 
-                  & .like-button-img {
+                  .like-button-img {
                     width: 25px;
                     height: 21px;
                     background-color: $black-bg;
                     display: block;
                   }
 
-                  & .like-button-img-painted {
+                  .like-button-img-painted {
                     width: 25px;
                     height: 21px;
                     background-color: $black-bg;
@@ -120,7 +102,7 @@
                   }
                 }
 
-                & .like-count {
+                .like-count {
                   color: $pink;
                   font-size: $fs-lg-extra;
                   font-family: $font-family-base;
@@ -129,11 +111,157 @@
                 }
               }
             }
+
+            &:hover .overlay {
+              height: 87px;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Gallery block media
+@media (max-width: $extra-wide) {
+  .gallery {
+    max-width: 100%;
+
+    & .gallery__container {
+      padding: 0;
+
+      & .gallery__block {
+        margin: 0;
+
+        & .gallery__text {
+          margin-bottom: 62px;
+          margin-left: 22.5%;
+
+          h1 {
+            font-size: $fs-features-title;
+            letter-spacing: 0;
           }
 
-          & .gallery__images-item:hover .overlay {
-            height: 87px;
-            display: flex;
+          p {
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $wide-width) {
+  .gallery {
+    max-width: 100%;
+
+    & .gallery__container {
+      & .gallery__block {
+        & .gallery__images {
+          & .gallery__images__block {
+            flex-wrap: wrap;
+
+            .gallery__images-item {
+              flex-basis: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .gallery {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .gallery {
+    max-width: 100%;
+
+    & .gallery__container {
+
+      & .gallery__block {
+
+        & .gallery__text {
+          margin-left: 15.5%;
+        }
+
+        & .gallery__images-item  {
+          & .overlay {
+            & .text {
+              &-main {
+                font-size: $fs-base;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $small-mobile-width) {
+  .gallery {
+    max-width: 100%;
+
+    & .gallery__container {
+      & .gallery__block {
+        & .gallery__text {
+          width: 310px;
+          margin-bottom: 50px;
+          margin-left: 10.5%;
+
+          h1 {
+            font-size: $fs-title-medium-large;
+          }
+
+          p {
+            line-height: 20px;
+            font-size: $fs-base;
+          }
+        }
+        & .gallery__images {
+          & .gallery__images__block {
+
+            .gallery__images-item {
+              flex-basis: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $extra-small-mobile-width) {
+  .gallery {
+    max-width: 100%;
+
+    & .gallery__container {
+      & .gallery__block {
+        & .gallery__text {
+          margin-bottom: 45px;
+          margin-left: 5.5%;
+        }
+
+        & .gallery__images {
+          & .gallery__images__block {
+            & .gallery__images-item  {
+              & .overlay {
+                & .text {
+                  & .like-section {
+                    & .like-count {
+                      font-size: $fs-small-medium;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

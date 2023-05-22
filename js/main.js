@@ -50,12 +50,18 @@ const galleryImages = document.querySelectorAll('.gallery__images__block .galler
 galleryImages.forEach((galleryImage) => {
   const overlay = galleryImage.querySelector('.overlay');
 
-  overlay.addEventListener('mouseover', function() {
-    galleryImage.classList.add('hovered');
+  galleryImage.addEventListener('mouseover', function() {
+    const image = galleryImage.querySelector('.gallery__images-item-img');
+    image.style.transform = 'translateY(-38px)';
+    overlay.style.height = '87px';
+    overlay.style.display = 'flex';
   });
 
-  overlay.addEventListener('mouseout', function() {
-    galleryImage.classList.remove('hovered');
+  galleryImage.addEventListener('mouseout', function() {
+    const image = galleryImage.querySelector('.gallery__images-item-img');
+    image.style.transform = 'none';
+    overlay.style.height = '0';
+    overlay.style.display = 'none';
   });
 });
 
