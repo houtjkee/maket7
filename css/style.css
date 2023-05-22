@@ -1104,3 +1104,100 @@ footer {
     font-size: 1.25em;
   }
 }
+.cta {
+  width: 100%;
+  background-color: #de5d5d;
+  padding-top: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta__container {
+  width: 1200px;
+}
+.cta__container .cta__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cta__container .cta__block .cta__image {
+  width: 388px;
+  height: 389px;
+  margin: 54px 0 0 -46px;
+}
+.cta__container .cta__block .cta__info {
+  width: 543px;
+  margin-left: 14px;
+  margin-top: -110px;
+}
+.cta__container .cta__block .cta__info .cta__text h1 {
+  color: #fff;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.cta__container .cta__block .cta__info .cta__text p {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 43px;
+}
+.cta__container .cta__block .cta__info .cta__button-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 13px 0 16px;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  width: 257px;
+  height: 77px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+}
+.cta__container .cta__block .cta__info .cta__button-btn:hover {
+  background-color: rgba(190, 33, 60, 0.8);
+}
+.cta__container .cta__block .cta__info .cta__button-btn img {
+  max-width: 100%;
+}
+.cta__container .cta__block .cta__info .cta__button-btn img-app {
+  margin-right: 16px;
+}
+.cta__container .cta__block .cta__info .cta__button-btn img-play {
+  margin: 4px 18px 0 6px;
+}
+
+@media (max-width: 1300px) {
+  .cta {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .cta {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .cta {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .cta {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .cta {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .cta {
+    width: 100%;
+  }
+}
