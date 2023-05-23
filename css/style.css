@@ -359,8 +359,8 @@ footer {
   background-color: #fff;
 }
 .why__ama .ama__container {
-  padding: 100px 0 94px 0;
-  max-width: 1170px;
+  padding: 100px 15px 94px 15px;
+  max-width: 1200px;
 }
 .why__ama .ama__container .ama__title {
   font-family: "Montserrat", sans-serif;
@@ -559,6 +559,7 @@ footer {
 }
 .share .share__container {
   max-width: 1200px;
+  padding: 0 15px;
 }
 .share .share__container .share__block .share__image {
   padding-top: 72px;
@@ -1108,12 +1109,14 @@ footer {
   width: 100%;
   background-color: #de5d5d;
   padding-top: 170px;
+  padding-bottom: 109px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cta__container {
-  width: 1200px;
+  max-width: 1200px;
+  padding: 0 15px;
 }
 .cta__container .cta__block {
   display: flex;
@@ -1122,33 +1125,34 @@ footer {
   align-items: center;
 }
 .cta__container .cta__block .cta__image {
-  width: 388px;
-  height: 389px;
-  margin: 54px 0 0 -46px;
+  margin: 54px 0 0 -17px;
 }
 .cta__container .cta__block .cta__info {
-  width: 543px;
   margin-left: 14px;
   margin-top: -110px;
 }
-.cta__container .cta__block .cta__info .cta__text h1 {
+.cta__container .cta__block .cta__info h1 {
   color: #fff;
   font-size: 3em;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin-bottom: 16px;
 }
-.cta__container .cta__block .cta__info .cta__text p {
+.cta__container .cta__block .cta__info p {
   color: #fff;
   font-size: 1.5em;
   font-family: "Varela Round", sans-serif;
   margin-bottom: 43px;
 }
-.cta__container .cta__block .cta__info .cta__button-btn {
+.cta__container .cta__block .cta__info .cta__info-button {
+  display: flex;
+  flex-direction: row;
+}
+.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 13px 0 16px;
+  margin: 0 31px 0 0;
   color: #fff;
   font-family: "Varela Round", sans-serif;
   font-size: 1.875em;
@@ -1158,46 +1162,169 @@ footer {
   border-radius: 5px;
   border: 3px solid #fff;
 }
-.cta__container .cta__block .cta__info .cta__button-btn:hover {
+.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn:hover {
   background-color: rgba(190, 33, 60, 0.8);
 }
-.cta__container .cta__block .cta__info .cta__button-btn img {
+.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img {
   max-width: 100%;
 }
-.cta__container .cta__block .cta__info .cta__button-btn img-app {
+.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img-app {
   margin-right: 16px;
 }
-.cta__container .cta__block .cta__info .cta__button-btn img-play {
+.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img-play {
   margin: 4px 18px 0 6px;
 }
 
 @media (max-width: 1300px) {
-  .cta {
-    width: 100%;
+  .cta .cta__container {
+    max-width: 992px;
   }
-}
-@media (max-width: 1200px) {
-  .cta {
-    width: 100%;
+  .cta .cta__container .cta__block .cta__image {
+    margin: 54px 0 0 0;
   }
 }
 @media (max-width: 992px) {
-  .cta {
-    width: 100%;
+  .cta .cta__container {
+    max-width: 768px;
+  }
+  .cta .cta__container .cta__block .cta__image {
+    margin: 0;
+  }
+  .cta .cta__container .cta__block .cta__info {
+    margin-top: 0;
+  }
+  .cta .cta__container .cta__block .cta__info p {
+    margin-bottom: 18px;
+  }
+  .cta .cta__container .cta__block .cta__info .cta__info-button {
+    flex-direction: column;
+  }
+  .cta .cta__container .cta__block .cta__info .cta__info-button .cta__button-btn {
+    margin: 0 0 10px 0;
   }
 }
 @media (max-width: 768px) {
-  .cta {
-    width: 100%;
+  .cta .cta__container {
+    max-width: 480px;
+  }
+  .cta .cta__container .cta__block {
+    flex-direction: column;
+  }
+  .cta .cta__container .cta__block .cta__info {
+    margin-left: 0;
+  }
+  .cta .cta__container .cta__block .cta__info p {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 480px) {
-  .cta {
-    width: 100%;
+  .cta .cta__container {
+    max-width: 320px;
   }
 }
 @media (max-width: 320px) {
-  .cta {
-    width: 100%;
+  .cta .cta__container {
+    max-width: 290px;
+  }
+  .cta .cta__container .cta__block .cta__info h1 {
+    font-size: 2.5em;
+  }
+}
+.compatibility {
+  width: 100%;
+  background-color: #e7e7e7;
+  padding-top: 87px;
+  padding-bottom: 120px;
+}
+.compatibility .compatibility__container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.compatibility .compatibility__container .compatibility__block {
+  max-width: 990px;
+  margin: 0 auto;
+}
+.compatibility .compatibility__container .compatibility__block .compatibility__title-text {
+  color: #666666;
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  border-bottom: 2px solid #cbcbcb;
+  padding-bottom: 20px;
+}
+.compatibility .compatibility__container .compatibility__devices {
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  justify-content: space-between;
+}
+.compatibility .compatibility__container .compatibility__devices .compatibility__ios {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.compatibility .compatibility__container .compatibility__devices .compatibility__ios-title {
+  color: #666666;
+  font-size: 1.125em;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 6px;
+}
+.compatibility .compatibility__container .compatibility__devices .compatibility__ios-text {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.compatibility .compatibility__container .compatibility__devices .compatibility__android {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 50px;
+}
+.compatibility .compatibility__container .compatibility__devices .compatibility__android-title {
+  color: #666666;
+  font-size: 1.125em;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 6px;
+}
+.compatibility .compatibility__container .compatibility__devices .compatibility__android-text {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  line-height: 20px;
+  margin-bottom: 38px;
+}
+
+@media (max-width: 1200px) {
+  .compatibility .compatibility__container .compatibility__devices .compatibility__android {
+    padding-right: 0;
+  }
+}
+@media (max-width: 992px) {
+  .compatibility .compatibility__container .compatibility__block .compatibility__devices .compatibility__android {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .compatibility .compatibility__container .compatibility__block .compatibility__devices {
+    flex-direction: column;
+  }
+  .compatibility .compatibility__container .compatibility__block .compatibility__devices .compatibility__android {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .compatibility .compatibility__container {
+    padding: 0;
+  }
+  .compatibility .compatibility__container .compatibility__block {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .compatibility .compatibility__container .compatibility__block {
+    max-width: 290px;
   }
 }

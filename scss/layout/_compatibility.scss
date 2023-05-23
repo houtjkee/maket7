@@ -1,0 +1,148 @@
+// Compatibility style
+.compatibility {
+  width: 100%;
+  background-color: $bg-grey;
+  padding-top: 87px;
+  padding-bottom: 120px;
+
+  .compatibility__container {
+    max-width: 1200px;
+    padding: 0 15px;
+
+    .compatibility__block {
+      max-width: 990px;
+      margin: 0 auto;
+
+      .compatibility__title {
+        &-text {
+          color: $grey;
+          font-size: $fs-lg-extra;
+          font-family: $font-family-title;
+          font-weight: 400;
+          border-bottom: 2px solid $border;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .compatibility__devices {
+      display: flex;
+      flex-direction: row;
+      padding-top: 25px;
+      justify-content: space-between;
+
+      .compatibility__ios {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-title {
+          color: $grey;
+          font-size: $fs-medium-small;
+          font-family: $font-family-title;
+          margin-bottom: 6px;
+        }
+
+        &-text {
+          color: $grey;
+          font-size: $fs-base;
+          font-family: $font-family-base;
+          line-height: 20px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .compatibility__android {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 50px;
+
+        &-title {
+          color: $grey;
+          font-size: $fs-medium-small;
+          font-family: $font-family-title;
+          margin-bottom: 6px;
+        }
+
+        &-text {
+          color: $grey;
+          font-size: $fs-base;
+          font-family: $font-family-base;
+          line-height: 20px;
+          margin-bottom: 38px;
+        }
+      }
+    }
+  }
+}
+
+// Compatibility block media
+
+@media (max-width: $extra-wide) {
+  .compatibility {
+  }
+}
+
+@media (max-width: $wide-width) {
+  .compatibility {
+    .compatibility__container {
+      .compatibility__devices {
+        .compatibility__android {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .compatibility {
+    .compatibility__container {
+      .compatibility__block {
+        .compatibility__devices {
+          .compatibility__android {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .compatibility {
+    .compatibility__container {
+      .compatibility__block {
+        .compatibility__devices {
+          flex-direction: column;
+          .compatibility__android {
+            padding-left: 0;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $small-mobile-width) {
+  .compatibility {
+    .compatibility__container {
+      padding: 0;
+      .compatibility__block {
+        max-width: 320px;
+      }
+    }
+  }
+}
+
+@media (max-width: $extra-small-mobile-width) {
+  .compatibility {
+    .compatibility__container {
+      .compatibility__block {
+        max-width: 290px;
+      }
+    }
+  }
+}

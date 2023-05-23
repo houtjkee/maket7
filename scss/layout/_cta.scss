@@ -1,13 +1,16 @@
+// Cta style
 .cta {
   width: 100%;
   background-color: $bg-color;
   padding-top: 170px;
+  padding-bottom: 109px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__container {
-    width: 1200px;
+    max-width: 1200px;
+    padding: 0 15px;
 
     & .cta__block {
       display: flex;
@@ -16,37 +19,37 @@
       align-items: center;
 
       & .cta__image {
-        margin: 54px 0 0 -46px;
+        margin: 54px 0 0 -17px;
       }
 
       & .cta__info {
-        width: 543px;
         margin-left: 14px;
         margin-top: -110px;
 
-        & .cta__text {
-          & h1 {
-            color: $white;
-            font-size: $fs-ama-title;
-            font-family: $font-family-title;
-            font-weight: 500;
-            margin-bottom: 16px;
-          }
-
-          & p {
-            color: $white;
-            font-size: $fs-lg-extra;
-            font-family: $font-family-base;
-            margin-bottom: 43px;
-          }
+        & h1 {
+          color: $white;
+          font-size: $fs-ama-title;
+          font-family: $font-family-title;
+          font-weight: 500;
+          margin-bottom: 16px;
         }
 
-        & .cta__button {
-          &-btn {
+        & p {
+          color: $white;
+          font-size: $fs-lg-extra;
+          font-family: $font-family-base;
+          margin-bottom: 43px;
+        }
+
+        & .cta__info-button {
+          display: flex;
+          flex-direction: row;
+
+          & .cta__button-btn {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            margin: 0 13px 0 16px;
+            margin: 0 31px 0 0;
             color: $white;
             font-family: $font-family-base;
             font-size: $fs-large;
@@ -78,39 +81,93 @@
   }
 }
 
-
+// Cta block media
 @media (max-width: $extra-wide) {
   .cta {
-    width: 100%;
+    .cta__container {
+      max-width: 992px;
+
+      .cta__block {
+        .cta__image {
+          margin: 54px 0 0 0;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: $wide-width) {
   .cta {
-    width: 100%;
   }
 }
 
 @media (max-width: $desktop-width) {
   .cta {
-    width: 100%;
+    .cta__container {
+      max-width: 768px;
+
+      .cta__block {
+        .cta__image {
+          margin: 0;
+        }
+
+        .cta__info {
+          margin-top: 0;
+
+          & p {
+            margin-bottom: 18px;
+          }
+
+          .cta__info-button {
+            flex-direction: column;
+
+            & .cta__button-btn {
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (max-width: $tablet-width) {
   .cta {
-    width: 100%;
+    .cta__container {
+      max-width: 480px;
+
+      .cta__block {
+        flex-direction: column;
+
+        .cta__info {
+          margin-left: 0;
+
+          & p {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
   }
 }
 
 @media (max-width: $small-mobile-width) {
   .cta {
-    width: 100%;
+    .cta__container {
+      max-width: 320px;
+    }
   }
 }
 
 @media (max-width: $extra-small-mobile-width) {
   .cta {
-    width: 100%;
+    .cta__container {
+      max-width: 290px;
+      .cta__block {
+        .cta__info h1 {
+          font-size: $fs-features-title;
+        }
+      }
+    }
   }
 }
