@@ -90,3 +90,33 @@ likeButtons.forEach(button => {
   });
 });
 
+$(document).ready(function() {
+  const $footerEmailInput = $('#email');
+
+  function validateEmailField() {
+    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    const email = $footerEmailInput.val().trim();
+
+    if (!emailRegex.test(email)) {
+      $footerEmailInput.css({
+        border: '1px solid red',
+        boxShadow: 'inset 0 0 5px red'
+      });
+      return false;
+    } else {
+      $footerEmailInput.css({
+        border: '',
+        boxShadow: ''
+      });
+      return true;
+    }
+  }
+
+  $footerEmailInput.blur(validateEmailField);
+
+  $('form').submit(function(event) {
+    if (!validateEmailField()) {
+      event.preventDefault(); // Зупиняє відправку форми, якщо поле не пройшло валідацію
+    }
+  });
+});

@@ -1307,6 +1307,9 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .compatibility .compatibility__container {
+    max-width: 480px;
+  }
   .compatibility .compatibility__container .compatibility__block .compatibility__devices {
     flex-direction: column;
   }
@@ -1322,9 +1325,114 @@ footer {
   .compatibility .compatibility__container .compatibility__block {
     max-width: 320px;
   }
+  .compatibility .compatibility__container .compatibility__block .compatibility__devices .compatibility__ios-text br {
+    display: none;
+  }
+  .compatibility .compatibility__container .compatibility__block .compatibility__devices .compatibility__android-text br {
+    display: none;
+  }
 }
 @media (max-width: 320px) {
   .compatibility .compatibility__container .compatibility__block {
     max-width: 290px;
+  }
+}
+.footer {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.footer .footer__container {
+  max-width: 1200px;
+  padding: 0 10px;
+}
+.footer .footer__container .footer__block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer__container .footer__block .footer__date-text {
+  color: #666666;
+  font-size: 1.125em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 13px;
+}
+.footer .footer__container .footer__block .footer__email {
+  margin-right: 62px;
+}
+.footer .footer__container .footer__block .footer__email-text {
+  color: #666666;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+.footer .footer__container .footer__block .footer__email-submit {
+  margin: 0;
+}
+.footer .footer__container .footer__block .footer__email-submit .footer__email-input {
+  width: 311px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #a3a3a3;
+  color: #666666;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 0 16px 16px;
+}
+.footer .footer__container .footer__block .footer__email-submit .footer__email-btn {
+  width: 101px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #f06464;
+  color: #f4f4f4;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 11px;
+}
+.footer .footer__container .footer__block .footer__email-submit .footer__email-btn:hover {
+  background-color: #ff8b8b;
+}
+
+@media (max-width: 1200px) {
+  .footer .footer__container {
+    padding: 0 15px;
+  }
+  .footer .footer__container .footer__block .footer__email {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__container {
+    max-width: 480px;
+  }
+  .footer .footer__container .footer__block {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+@media (max-width: 480px) {
+  .footer .footer__container {
+    max-width: 320px;
+  }
+  .footer .footer__container .footer__block .footer__email-submit .footer__email-input {
+    margin-bottom: 11px;
+  }
+  .footer .footer__container .footer__block .footer__email-submit .footer__email-btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 320px) {
+  .cta .cta__container {
+    max-width: 290px;
+  }
+  .cta .cta__container .cta__block .cta__info h1 {
+    font-size: 2.5em;
   }
 }

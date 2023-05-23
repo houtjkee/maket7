@@ -1,0 +1,139 @@
+// Footer style
+.footer {
+  width: 100%;
+  background-color: $bg-white;
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  .footer__container {
+    max-width: 1200px;
+    padding: 0 10px;
+
+    & .footer__block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      & .footer__date {
+        &-text {
+          color: $grey;
+          font-size: $fs-medium-small;
+          font-family: $font-family-title;
+          font-weight: 400;
+          margin-top: 13px;
+        }
+      }
+
+      & .footer__email {
+        margin-right: 62px;
+        &-text {
+          color: $grey;
+          font-size: $fs-base;
+          font-family: $font-family-base;
+          font-weight: 400;
+          line-height: 24px;
+          margin-bottom: 14px;
+        }
+        &-submit {
+          margin: 0;
+
+          & .footer__email-input {
+            width: 311px;
+            height: 48px;
+            border-radius: 5px;
+            border: 1px solid $border-input;
+            color: $grey;
+            font-family: $font-family-base;
+            font-size: $fs-base;
+            font-weight: 400;
+            padding: 16px 0 16px 16px;
+          }
+          & .footer__email-btn {
+            width: 101px;
+            height: 48px;
+            border-radius: 5px;
+            background-color: $pink;
+            color: $bg-white;
+            font-family: $font-family-base;
+            font-size: $fs-base;
+            font-weight: 400;
+            margin-left: 11px;
+            &:hover {
+              background-color: $bg-btn-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer block media
+@media (max-width: $extra-wide) {
+  .footer {
+  }
+}
+
+@media (max-width: $wide-width) {
+  .footer {
+    .footer__container {
+      padding: 0 15px;
+      .footer__block {
+        .footer__email {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .footer {
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    .footer__container {
+      max-width: 480px;
+      .footer__block {
+        flex-direction: column;
+        align-items: normal;
+      }
+    }
+  }
+}
+
+@media (max-width: $small-mobile-width) {
+  .footer {
+    .footer__container {
+      max-width: 320px;
+      .footer__block {
+        .footer__email-submit {
+          .footer__email-input {
+            margin-bottom: 11px;
+          }
+          .footer__email-btn {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $extra-small-mobile-width) {
+  .cta {
+    .cta__container {
+      max-width: 290px;
+      .cta__block {
+        .cta__info h1 {
+          font-size: $fs-features-title;
+        }
+      }
+    }
+  }
+}
+
+

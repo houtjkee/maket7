@@ -113,6 +113,7 @@
 @media (max-width: $tablet-width) {
   .compatibility {
     .compatibility__container {
+      max-width: 480px;
       .compatibility__block {
         .compatibility__devices {
           flex-direction: column;
@@ -132,6 +133,18 @@
       padding: 0;
       .compatibility__block {
         max-width: 320px;
+        .compatibility__devices {
+          .compatibility__ios-text {
+            br {
+              display: none;
+            }
+          }
+          .compatibility__android-text {
+            br {
+              display: none;
+            }
+          }
+        }
       }
     }
   }
