@@ -1,4 +1,4 @@
-// Стилі для контейнера банеру
+// Banner style
 .banner {
   max-width: 100%;
   display: flex;
@@ -7,6 +7,7 @@
   align-items: center;
   padding: 0;
   background-color: $bg-color;
+  padding-top: 98px;
 
   .banner__slider {
     width: 100%;

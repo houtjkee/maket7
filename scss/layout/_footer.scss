@@ -3,7 +3,7 @@
   width: 100%;
   background-color: $bg-white;
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 74px;
 
   .footer__container {
     max-width: 1200px;
@@ -124,15 +124,7 @@
 }
 
 @media (max-width: $extra-small-mobile-width) {
-  .cta {
-    .cta__container {
-      max-width: 290px;
-      .cta__block {
-        .cta__info h1 {
-          font-size: $fs-features-title;
-        }
-      }
-    }
+  .footer {
   }
 }
 

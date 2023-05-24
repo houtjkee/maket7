@@ -90,6 +90,7 @@ likeButtons.forEach(button => {
   });
 });
 
+/* Validation form */
 $(document).ready(function() {
   const $footerEmailInput = $('#email');
 
@@ -116,7 +117,26 @@ $(document).ready(function() {
 
   $('form').submit(function(event) {
     if (!validateEmailField()) {
-      event.preventDefault(); // Зупиняє відправку форми, якщо поле не пройшло валідацію
+      event.preventDefault();
     }
   });
 });
+
+/* Navigation */
+document.querySelectorAll('.header__burger-list-link').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const blockID = this.getAttribute('href').substr(1);
+    const element = document.getElementById(blockID);
+    const headerHeight = 80;
+    const windowHeight = window.innerHeight;
+
+    const elementOffsetTop = element.getBoundingClientRect().top + window.pageYOffset;
+
+    const yOffset = headerHeight > windowHeight ? -(headerHeight - windowHeight) / 2 : -headerHeight / 2;
+    const y = elementOffsetTop + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
+

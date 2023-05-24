@@ -14,68 +14,90 @@
 <body>
 <!-- All content block -->
 <div class="wrapper">
+  <!-- Header block -->
+  <header class="header" id="header">
+    <nav class="header__navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="header__navbar__container row"><a href="#" class="header__navbar-brand">ama</a>
+        <button class="header__burger__button navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+          <span class="header__burger__button-toggle navbar-toggler-icon"></span>
+        </button>
+        <div class="header__burger__collapse collapse navbar-collapse" id="navbarContent">
+          <ul class="header__burger-list navbar-nav ml-auto ml-2">
+            <li class="header__burger-list-item nav-item"><a href="#header" class="header__burger-list-link nav-link">Hello</a>
+            </li>
+            <li class="header__burger-list-item nav-item"><a href="#overview" class="header__burger-list-link nav-link">Overview</a>
+            </li>
+            <li class="header__burger-list-item nav-item"><a href="#share" class="header__burger-list-link nav-link">Share</a>
+            </li>
+            <li class="header__burger-list-item nav-item"><a href="#features" class="header__burger-list-link nav-link">Features</a>
+            </li>
+            <li class="header__burger-list-item nav-item"><a href="#gallery" class="header__burger-list-link nav-link">Gallery</a>
+            </li>
+            <li class="header__burger-list-item nav-item"><a href="#download" class="header__burger-list-link nav-link">Download</a>
+            </li>
+            <li class="header__burger-list-item nav-item"><a href="#compatibility"
+                                                             class="header__burger-list-link nav-link">Compatibility</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <!-- Banner block -->
   <div class="banner row">
     <div class="banner__slider col-12">
-      <div class="slider-item">
-        <img class="slider-item-img d-block" src="img/banner/iPhone.png" alt="iphone">
+      <div class="slider-item"><img class="slider-item-img d-block" src="img/banner/iPhone.png" alt="iphone">
         <div class="slider-item-caption">
           <h3 class="slider-item-caption-title">Capture and Share</h3>
-          <div class="slider-item-caption-btn">
-            <a class="btn bth-primary" href="#"><img class="slider-item-caption-btn-img-app"
-                                                     src="img/icons/Icon-AppStore.png" alt="AppStore-logo">App Store</a>
-            <a class="btn bth-primary" href="#"><img class="slider-item-caption-btn-img-play"
-                                                     src="img/icons/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a>
-          </div>
+          <div class="slider-item-caption-btn"><a class="btn bth-primary" href="#"><img
+            class="slider-item-caption-btn-img-app"
+            src="img/icons/Icon-AppStore.png" alt="AppStore-logo">App Store</a> <a class="btn bth-primary" href="#"><img
+            class="slider-item-caption-btn-img-play"
+            src="img/icons/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a></div>
         </div>
       </div>
-      <div class="slider-item">
-        <img class="slider-item-img d-block" src="img/banner/iPhone.png" alt="iphone">
+      <div class="slider-item"><img class="slider-item-img d-block" src="img/banner/iPhone.png" alt="iphone">
         <div class="slider-item-caption">
           <h3 class="slider-item-caption-title">Capture and Share</h3>
-          <div class="slider-item-caption-btn">
-            <a class="btn bth-primary" href="#"><img class="slider-item-caption-btn-img-app"
-                                                     src="img/icons/Icon-AppStore.png" alt="AppStore-logo">App Store</a>
-            <a class="btn bth-primary" href="#"><img class="slider-item-caption-btn-img-play"
-                                                     src="img/icons/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a>
-          </div>
+          <div class="slider-item-caption-btn"><a class="btn bth-primary" href="#"><img
+            class="slider-item-caption-btn-img-app"
+            src="img/icons/Icon-AppStore.png" alt="AppStore-logo">App Store</a> <a class="btn bth-primary" href="#"><img
+            class="slider-item-caption-btn-img-play"
+            src="img/icons/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a></div>
         </div>
       </div>
-      <div class="slider-item">
-        <img class="slider-item-img d-block" src="img/banner/iPhone.png" alt="iphone">
+      <div class="slider-item"><img class="slider-item-img d-block" src="img/banner/iPhone.png" alt="iphone">
         <div class="slider-item-caption">
           <h3 class="slider-item-caption-title">Capture and Share</h3>
-          <div class="slider-item-caption-btn">
-            <a class="btn bth-primary" href="#"><img class="slider-item-caption-btn-img-app"
-                                                     src="img/icons/Icon-AppStore.png" alt="AppStore-logo">App Store</a>
-            <a class="btn bth-primary" href="#"><img class="slider-item-caption-btn-img-play"
-                                                     src="img/icons/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a>
-          </div>
+          <div class="slider-item-caption-btn"><a class="btn bth-primary" href="#"><img
+            class="slider-item-caption-btn-img-app"
+            src="img/icons/Icon-AppStore.png" alt="AppStore-logo">App Store</a> <a class="btn bth-primary" href="#"><img
+            class="slider-item-caption-btn-img-play"
+            src="img/icons/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a></div>
         </div>
       </div>
     </div>
   </div>
   <!-- Why ama block  -->
-  <div class="why__ama">
+  <div class="why__ama" id="overview">
     <div class="ama__container text-center container-fluid">
       <h1 class="ama__title">Why ama?</h1>
       <div class="ama__block row">
-        <div class="ama__card-1 ama-item col-lg-3 col-md-6 col-sm-12">
-          <img src="img/why ama/Focus.png" alt="Focus">
+        <div class="ama__card-1 ama-item col-lg-3 col-md-6 col-sm-12"><img src="img/why ama/Focus.png" alt="Focus">
           <h3>Auto focus</h3>
           <p>ultrices nisI sit amet luctus.</p>
           <p>Donec volutpat arcu ullamcorper</p>
           <p>facilisis vulputate. Sed auctor</p>
         </div>
-        <div class="ama__card-2 ama-item col-lg-3 col-md-6 col-sm-12">
-          <img src="img/why ama/Touch_ID.png" alt="Touch-id">
+        <div class="ama__card-2 ama-item col-lg-3 col-md-6 col-sm-12"><img src="img/why ama/Touch_ID.png"
+                                                                           alt="Touch-id">
           <h3>Secured with Touch ID</h3>
           <p>ultrices nisI sit amet luctus.</p>
           <p>Donec volutpat arcu ullamcorper</p>
           <p>facilisis vulputate. Sed auctor</p>
         </div>
-        <div class="ama__card-3 ama-item col-lg-3 col-md-6 col-sm-12">
-          <img src="img/why ama/Filters.png" alt="Filters">
+        <div class="ama__card-3 ama-item col-lg-3 col-md-6 col-sm-12"><img src="img/why ama/Filters.png" alt="Filters">
           <h3>Your Filters</h3>
           <p>ultrices nisI sit amet luctus.</p>
           <p>Donec volutpat arcu ullamcorper</p>
@@ -85,32 +107,31 @@
     </div>
   </div>
   <!-- Share block -->
-  <div class="share">
+  <div class="share" id="share">
     <div class="share__container container-fluid">
       <div class="share__block row">
-        <div class="share__image col-md-6">
-          <img src="img/share/iPhone-share.png" alt="iphone-vertical" class="share__container-img img-fluid">
-        </div>
+        <div class="share__image col-md-6"><img src="img/share/iPhone-share.png" alt="iphone-vertical"
+                                                class="share__container-img img-fluid"></div>
         <div class="share__info col-md-6">
           <h1 class="share__info-title">Share instantly</h1>
           <p class="share__info-text">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
             facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
           <div class="share__info-slider">
-            <div class="share__info-slider-item">
-              <a href="#" class="share__info-slider-item-img"><img src="img/share/Video.png" alt="Video"
-                                                                   class="share__info-slider-item-video"></a>
+            <div class="share__info-slider-item"><a href="#" class="share__info-slider-item-img"><img
+              src="img/share/Video.png" alt="Video"
+              class="share__info-slider-item-video"></a>
               <p class="share__info-slider-item-text">Mauris euismod ultrices nis sit amet luctus. Done volutpat arcu
                 ullamcorper facilisis vulputate. Sed auctor puivinar.</p>
             </div>
-            <div class="share__info-slider-item">
-              <a href="#" class="share__info-slider-item-img"><img src="img/share/Video.png" alt="Video"
-                                                                   class="share__info-slider-item-video"></a>
+            <div class="share__info-slider-item"><a href="#" class="share__info-slider-item-img"><img
+              src="img/share/Video.png" alt="Video"
+              class="share__info-slider-item-video"></a>
               <p class="share__info-slider-item-text">Mauris euismod ultrices nis sit amet luctus. Done volutpat arcu
                 ullamcorper facilisis vulputate. Sed auctor puivinar.</p>
             </div>
-            <div class="share__info-slider-item">
-              <a href="#" class="share__info-slider-item-img"><img src="img/share/Video.png" alt="Video"
-                                                                   class="share__info-slider-item-video"></a>
+            <div class="share__info-slider-item"><a href="#" class="share__info-slider-item-img"><img
+              src="img/share/Video.png" alt="Video"
+              class="share__info-slider-item-video"></a>
               <p class="share__info-slider-item-text">Mauris euismod ultrices nis sit amet luctus. Done volutpat arcu
                 ullamcorper facilisis vulputate. Sed auctor puivinar.</p>
             </div>
@@ -120,7 +141,7 @@
     </div>
   </div>
   <!-- Features block -->
-  <div class="features">
+  <div class="features" id="features">
     <div class="features__container container-fluid">
       <div class="features__block row">
         <div class="features__text col-md-6 col-sm-12">
@@ -129,73 +150,65 @@
             <p class="features__info-text">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper
               facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
             <div class="features__info-slider">
-              <div class="features__info-slider-item">
-                <img src="img/features/Brush.png" alt="Brush">
+              <div class="features__info-slider-item"><img src="img/features/Brush.png" alt="Brush">
                 <div class="features__info-slider-item-text">
                   <h3>Color your photos</h3>
-                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec
-                    volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                 </div>
               </div>
-              <div class="features__info-slider-item">
-                <img src="img/features/Brush.png" alt="Brush">
+              <div class="features__info-slider-item"><img src="img/features/Brush.png" alt="Brush">
                 <div class="features__info-slider-item-text">
                   <h3>Color your photos</h3>
-                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec
-                    volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                 </div>
               </div>
-              <div class="features__info-slider-item">
-                <img src="img/features/Brush.png" alt="Brush">
+              <div class="features__info-slider-item"><img src="img/features/Brush.png" alt="Brush">
                 <div class="features__info-slider-item-text">
                   <h3>Color your photos</h3>
-                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec
-                    volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                 </div>
               </div>
-              <div class="features__info-slider-item">
-                <img src="img/features/Brush.png" alt="Brush">
+              <div class="features__info-slider-item"><img src="img/features/Brush.png" alt="Brush">
                 <div class="features__info-slider-item-text">
                   <h3>Color your photos</h3>
-                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec
-                    volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                 </div>
               </div>
-              <div class="features__info-slider-item">
-                <img src="img/features/Brush.png" alt="Brush">
+              <div class="features__info-slider-item"><img src="img/features/Brush.png" alt="Brush">
                 <div class="features__info-slider-item-text">
                   <h3>Color your photos</h3>
-                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec
-                    volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                 </div>
               </div>
-              <div class="features__info-slider-item">
-                <img src="img/features/Brush.png" alt="Brush">
+              <div class="features__info-slider-item"><img src="img/features/Brush.png" alt="Brush">
                 <div class="features__info-slider-item-text">
                   <h3>Color your photos</h3>
-                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec
-                    volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                 </div>
               </div>
-              <div class="features__info-slider-item">
-                <img src="img/features/Brush.png" alt="Brush">
+              <div class="features__info-slider-item"><img src="img/features/Brush.png" alt="Brush">
                 <div class="features__info-slider-item-text">
                   <h3>Color your photos</h3>
-                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec
-                    volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                  <p class="features__info-slider-item-text-p">ultrices nisl sit amet luctus. Donec volutpat arcu
+                    ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="features__image col-md-6 col-sm-12">
-          <img src="img/features/features.png" alt="Features on phone" class="img-fluid">
-        </div>
+        <div class="features__image col-md-6 col-sm-12"><img src="img/features/features.png" alt="Features on phone"
+                                                             class="img-fluid"></div>
       </div>
     </div>
   </div>
   <!-- Gallery block -->
-  <div class="gallery">
+  <div class="gallery" id="gallery">
     <div class="gallery__container container-fluid">
       <div class="gallery__block row">
         <div class="gallery__text">
@@ -205,8 +218,8 @@
         </div>
         <div class="gallery__images container-fluid">
           <div class="gallery__images__block">
-            <div class="gallery__images-item">
-              <img src="img/gallery/woman.png" alt="woman" class="gallery__images-item-img">
+            <div class="gallery__images-item"><img src="img/gallery/woman.png" alt="woman"
+                                                   class="gallery__images-item-img">
               <div class="overlay">
                 <div class="text">
                   <p class="text-main">Mauris euismod ultrices</p>
@@ -222,8 +235,8 @@
                 </div>
               </div>
             </div>
-            <div class="gallery__images-item">
-              <img src="img/gallery/nature.png" alt="nature" class="gallery__images-item-img">
+            <div class="gallery__images-item"><img src="img/gallery/nature.png" alt="nature"
+                                                   class="gallery__images-item-img">
               <div class="overlay">
                 <div class="text">
                   <p class="text-main">Mauris euismod ultrices</p>
@@ -239,8 +252,8 @@
                 </div>
               </div>
             </div>
-            <div class="gallery__images-item">
-              <img src="img/gallery/city.png" alt="city" class="gallery__images-item-img">
+            <div class="gallery__images-item"><img src="img/gallery/city.png" alt="city"
+                                                   class="gallery__images-item-img">
               <div class="overlay">
                 <div class="text">
                   <p class="text-main">Mauris euismod ultrices</p>
@@ -256,8 +269,8 @@
                 </div>
               </div>
             </div>
-            <div class="gallery__images-item">
-              <img src="img/gallery/picnic.png" alt="picnic" class="gallery__images-item-img">
+            <div class="gallery__images-item"><img src="img/gallery/picnic.png" alt="picnic"
+                                                   class="gallery__images-item-img">
               <div class="overlay">
                 <div class="text">
                   <p class="text-main">Mauris euismod ultrices</p>
@@ -279,27 +292,25 @@
     </div>
   </div>
   <!-- CTA block -->
-  <div class="cta">
+  <div class="cta" id="download">
     <div class="cta__container container-fluid">
       <div class="cta__block">
-        <div class="cta__image">
-          <img src="img/cta/app_icon.png" alt="App icon" class="cta__image-icon d-block img-fluid">
-        </div>
+        <div class="cta__image"><img src="img/cta/app_icon.png" alt="App icon"
+                                     class="cta__image-icon d-block img-fluid"></div>
         <div class="cta__info">
           <h1>Believe me,<br> you don’t wanna <br> miss this app.</h1>
           <p>- Newyork Times</p>
-          <div class="cta__info-button">
-            <a class="cta__button-btn" href="#"><img class="cta__button-app" src="img/cta/Icon-AppStore.png"
-                                                     alt="AppStore-logo">App Store</a>
-            <a class="cta__button-btn" href="#"><img class="cta__button-play" src="img/cta/icon-PlayStore.png"
-                                                     alt="PlayStore-logo">Play Store</a>
-          </div>
+          <div class="cta__info-button"><a class="cta__button-btn" href="#"><img class="cta__button-app"
+                                                                                 src="img/cta/Icon-AppStore.png"
+                                                                                 alt="AppStore-logo">App Store</a> <a
+            class="cta__button-btn" href="#"><img class="cta__button-play" src="img/cta/icon-PlayStore.png"
+                                                  alt="PlayStore-logo">Play Store</a></div>
         </div>
       </div>
     </div>
   </div>
   <!-- Compatibility block -->
-  <div class="compatibility">
+  <div class="compatibility" id="compatibility">
     <div class="compatibility__container container-fluid">
       <div class="compatibility__block">
         <div class="compatibility__title">
@@ -309,17 +320,15 @@
           <div class="compatibility__ios">
             <h2 class="compatibility__ios-title">iOS</h2>
             <p class="compatibility__ios-text">Requires iOS 6.0 or later. Compatible with iPhone, iPad, <br> and iPod
-              touch.
-              This app is optimized for iPhone 5.</p>
-            <img class="compatibility__ios-img img-fluid" src="img/compatibility/iOS_devices.png" alt="iOS devices">
-          </div>
+              touch. This app is optimized for iPhone 5.</p> <img class="compatibility__ios-img img-fluid"
+                                                                  src="img/compatibility/iOS_devices.png"
+                                                                  alt="iOS devices"></div>
           <div class="compatibility__android">
             <h2 class="compatibility__android-title">Android</h2>
-            <p class="compatibility__android-text">Compatible with Android KitKat 4.4 or later.
-              <br> Support for x86 devices (i.e. Samsung Galaxy Tab 3 10.1).</p>
-            <img class="compatibility__android-img img-fluid" src="img/compatibility/Android_devices.png"
-                 alt="Android devices">
-          </div>
+            <p class="compatibility__android-text">Compatible with Android KitKat 4.4 or later. <br> Support for x86
+              devices (i.e. Samsung Galaxy Tab 3 10.1).</p> <img class="compatibility__android-img img-fluid"
+                                                                 src="img/compatibility/Android_devices.png"
+                                                                 alt="Android devices"></div>
         </div>
       </div>
     </div>
@@ -332,12 +341,10 @@
           <h2 class="footer__date-text">© 2014 ama. All Rights Reserved.</h2>
         </div>
         <div class="footer__email">
-          <form>
-            <label for="email" class="footer__email-text">Subscribe our email newsletter.</label>
-            <div class="footer__email-submit row">
-              <input class="footer__email-input" type="email" id="email" placeholder="Your email" name="email" required>
-              <input class="footer__email-btn" type="submit" id="footer__email-submit-btn" value="Submit">
-            </div>
+          <form><label for="email" class="footer__email-text">Subscribe our email newsletter.</label>
+            <div class="footer__email-submit row"><input class="footer__email-input" type="email" id="email"
+                                                         placeholder="Your email" name="email" required> <input
+              class="footer__email-btn" type="submit" id="footer__email-submit-btn" value="Submit"></div>
           </form>
         </div>
       </div>
