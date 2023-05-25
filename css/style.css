@@ -181,9 +181,7 @@ footer {
 }
 .banner .banner__slider .slider-item .slider-item-caption .slider-item-caption-btn .btn {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0 16px 0 13px;
   color: #fff;
   font-family: "Varela Round", sans-serif;
   font-size: 1.875em;
@@ -192,6 +190,9 @@ footer {
   height: 77px;
   border-radius: 5px;
   border: 3px solid #fff;
+  justify-content: center;
+  margin: 0 16px 0 13px;
+  font-size: 1.875em;
 }
 .banner .banner__slider .slider-item .slider-item-caption .slider-item-caption-btn .btn:hover {
   background-color: rgba(222, 90, 90, 0.6);
@@ -1158,9 +1159,7 @@ footer {
 }
 .cta__container .cta__block .cta__info .cta__info-button .cta__button-btn {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  margin: 0 31px 0 0;
   color: #fff;
   font-family: "Varela Round", sans-serif;
   font-size: 1.875em;
@@ -1169,6 +1168,8 @@ footer {
   height: 77px;
   border-radius: 5px;
   border: 3px solid #fff;
+  justify-content: space-evenly;
+  margin: 0 31px 0 0;
 }
 .cta__container .cta__block .cta__info .cta__info-button .cta__button-btn:hover {
   background-color: rgba(190, 33, 60, 0.8);
@@ -1176,10 +1177,10 @@ footer {
 .cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img {
   max-width: 100%;
 }
-.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img-app {
+.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img .cta__button-app {
   margin-right: 16px;
 }
-.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img-play {
+.cta__container .cta__block .cta__info .cta__info-button .cta__button-btn img .cta__button-play {
   margin: 4px 18px 0 6px;
 }
 
