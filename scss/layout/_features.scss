@@ -121,12 +121,6 @@
   }
 }
 
-@media (max-width: $wide-width) {
-  .features {
-    max-width: 100%;
-  }
-}
-
 @media (max-width: $desktop-width) {
   .features {
     max-width: 100%;
@@ -180,12 +174,12 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $share-tablet-width) {
   .features {
     max-width: 100%;
 
     & .features__container {
-      max-width: 320px;
+      max-width: 480px;
 
       & .features__block {
         & .features__image {
@@ -202,7 +196,7 @@
             padding: 0 15px;
 
             &-slider {
-                width: 290px;
+                width: 450px;
             }
           }
         }
@@ -215,11 +209,19 @@
 @media (max-width: $small-mobile-width) {
   .features {
     max-width: 100%;
+    & .features__container {
+      max-width: 320px;
+        & .features__block {
+          & .features__text {
+            & .features__info {
+              &-slider {
+                width: 290px;
+              }
+            }
+          }
+
+        }
+    }
   }
 }
 
-@media (max-width: $extra-small-mobile-width) {
-  .features {
-    max-width: 100%;
-  }
-}

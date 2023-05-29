@@ -72,6 +72,7 @@
 // Footer block media
 @media (max-width: $extra-wide) {
   .footer {
+    width: 100%;
   }
 }
 
@@ -85,11 +86,6 @@
         }
       }
     }
-  }
-}
-
-@media (max-width: $desktop-width) {
-  .footer {
   }
 }
 
@@ -123,9 +119,5 @@
   }
 }
 
-@media (max-width: $extra-small-mobile-width) {
-  .footer {
-  }
-}
 
 

@@ -59,6 +59,7 @@
 // Header style
 @media (max-width: $extra-wide) {
   .header {
+    width: 100%;
   }
 }
 
@@ -132,13 +133,4 @@
       }
     }
   }
-}
-
-@media (max-width: $tablet-width) {
-}
-
-@media (max-width: $small-mobile-width) {
-}
-
-@media (max-width: $extra-small-mobile-width) {
 }

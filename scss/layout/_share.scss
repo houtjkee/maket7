@@ -167,7 +167,7 @@
     width: 100%;
 
     & .share__container {
-      max-width: 320px;
+      max-width: 480px;
 
       & .share__block {
         & .share__image {
@@ -210,72 +210,12 @@
 
 
 @media (max-width: $small-mobile-width) {
-  .why__ama {
+  .share {
     width: 100%;
 
-    & .ama__container {
-
-      & .ama__title {
-        font-size: $fs-extra-small-large;
-        padding-right: 0;
-      }
-
-      & .ama__block {
-
-        & .ama__card-1 {
-
-          & h3 {
-            font-size: $fs-base;
-          }
-
-          & img {
-            width: 189px;
-            height: 189px;
-          }
-
-          & p {
-            font-size: $fs-small;
-          }
-        }
-
-        & .ama__card-2 {
-
-          & h3 {
-            font-size: $fs-base;
-          }
-
-          & img {
-            width: 189px;
-            height: 189px;
-          }
-
-          & p {
-            font-size: $fs-small;
-          }
-        }
-
-        & .ama__card-3 {
-
-          & h3 {
-            font-size: $fs-base;
-          }
-
-          & img {
-            width: 189px;
-            height: 189px;
-          }
-
-          & p {
-            font-size: $fs-small;
-          }
-        }
-      }
+    & .share__container {
+      max-width: 320px;
     }
   }
 }
 
-@media (max-width: $extra-small-mobile-width) {
-  .why__ama {
-    width: 100%;
-  }
-}
