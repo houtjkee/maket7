@@ -196,7 +196,7 @@
             padding: 0 15px;
 
             &-slider {
-                width: 450px;
+              width: 400px;
             }
           }
         }
@@ -209,18 +209,19 @@
 @media (max-width: $small-mobile-width) {
   .features {
     max-width: 100%;
+
     & .features__container {
       max-width: 320px;
-        & .features__block {
-          & .features__text {
-            & .features__info {
-              &-slider {
-                width: 290px;
-              }
+
+      & .features__block {
+        & .features__text {
+          & .features__info {
+            &-slider {
+              width: 290px;
             }
           }
-
         }
+      }
     }
   }
 }
